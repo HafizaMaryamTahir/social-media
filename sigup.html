@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <!-- css -->
+        <link rel="stylesheet" href="./assests/css/style.css">
+        <!-- javacript -->
+
+    <title>practics</title>
+
+</head>
+
+<body>
+
+    <section>
+</div>
+        
+<!-- Wrapper Area -->
+<div class="wrapper__area" id="wrapper_Area">
+    <!-- Forms Area -->
+    <div class="forms__area">
+      <!-- Login Form -->
+      <form class="login__form" id="loginForm">
+        <!-- Form Title -->
+        <h1 class="form__title">Sign In!</h1>
+        <!-- inputs Groups -->
+        <div class="input__group">
+          <label class="field">
+            <input type="text" name="username" placeholder="Username" id="loginUsername">
+          </label>
+          <span class="input__icon"><i class="bx bx-user"></i></span>
+          <small class="input__error_message"></small>
+        </div>
+        <div class="input__group">
+          <label class="field">
+            <input type="password" name="password" placeholder="Password" id="loginPassword">
+          </label>
+          <span class="input__icon"><i class="bx bx-lock"></i></span>
+          <span class="showHide__Icon"><i class="bx bx-hide"></i></span>
+          <small class="input__error_message"></small>
+        </div>
+        <div class="form__actions">
+          <label for="checkboxInput" class="remeber_me">
+            <input type="checkbox" id="checkboxInput">
+            <span class="checkmark"></span>
+            <span>Remeber Me</span>
+          </label>
+          <a href="../task-pf/forgotpassward.html"><div class="forgot_password">Forgot Password?</a></div>
+        </div>
+        <!-- Login Button -->
+        <button   onclick="login()"  class="submit-button" id="loginSubmitBtn">Sign in</button>
+        <!-- Alternate Login -->
+        <div class="alternate-login">
+          <div class="link">
+            <i class='bx bxl-google'></i>
+            <span>Google</span>
+          </div>
+          <div class="link">
+            <i class='bx bxl-facebook-circle'></i>
+            <span>Facebook</span>
+          </div>
+        </div>
+      </form> <!-- End Login Form -->
+  
+      <!-- Sign Up Form -->
+      <form class="sign-up__form" id="signUpForm">
+        <!-- Form Title -->
+        <h1 class="form__title">Sign Up!</h1>
+        <!-- inputs Groups -->
+        <div class="input__group">
+          <label class="field">
+            <input type="text" name="username" placeholder="Username123..." id="signUpUsername">
+          </label>
+          <span class="input__icon"><i class="bx bx-user"></i></span>
+          <small class="input__error_message"></small>
+        </div>
+        <div class="input__group">
+          <label class="field">
+            <input type="text" name="email" placeholder="Email@example.com" id="signUpEmail">
+          </label>
+          <span class="input__icon"><i class="bx bx-at"></i></span>
+          <small class="input__error_message"></small>
+        </div>
+        <div class="input__group">
+          <label class="field">
+            <input type="password" name="password" placeholder="Password123$#%&..." id="signUpPassword">
+          </label>
+          <span class="input__icon"><i class="bx bx-lock"></i></span>
+          <span class="showHide__Icon"><i class="bx bx-hide"></i></span>
+          <small class="input__error_message"></small>
+        </div>
+        <div class="input__group confirm__group">
+          <label class="field">
+            <input type="password" name="confirm_password" placeholder="Confirm Password" id="signUpConfirmPassword" >
+          </label>
+          <span class="input__icon"><i class="bx bx-lock"></i></span>
+          <span class="showHide__Icon"><i class="bx bx-hide"></i></span>
+          <small class="input__error_message"></small>
+        </div>
+        <!-- Sign Up Button -->
+     
+        <button   onclick="signIn()"class="submit-button" id="signUpSubmitBtn"><i class="fas fa-camera-alt"></i>Sign Up</button>
+        
+        <!-- Alternate Login -->
+        <div class="alternate-login">
+          <div class="link">
+            <i class='bx bxl-google'></i>
+            <span>Google</span>
+          </div>
+          <div class="link">
+            <i class='bx bxl-facebook-circle'></i>
+            <span>Facebook</span>
+          </div>
+        </div>
+      </form> <!-- End Sign Up Form -->
+    </div><!-- End Forms Area -->
+  
+    <!-- Aside Area -->
+    <div class="aside__area" id="aside_Area">
+      <div class="login__aside-info">
+        <h4>Hello</h4>
+        <img src="https://d.top4top.io/p_1945xjz2y1.png" alt="Image">
+        <p>Enter your personal details and start journey with us</p>
+        <button id="aside_signUp_Btn">Sign Up</button>
+      </div>
+      <div class="sign-up__aside-info">
+        <h4>Welcome</h4>
+        <img src="https://e.top4top.io/p_1945sidbp2.png" alt="Image">
+        <p>To Keep connected with us please login with your personal info</p>
+        <button id="aside_signIn_Btn" onclick="login()">Sign In</button>
+      </div>
+    </div>
+  </div>
+  <!-- End Wrapper Area -->
+  
+    </section>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+<script src="./assests/js/javascript.js"></script>
+
+</html>
